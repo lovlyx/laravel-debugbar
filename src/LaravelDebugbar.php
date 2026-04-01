@@ -352,7 +352,7 @@ class LaravelDebugbar extends DebugBar
         $renderer->setTheme($config->get('debugbar.theme', 'auto'));
 
         $renderer->setAssetHandlerUrl(route('debugbar.assets'));
-        $renderer->addAssets(cssFiles: ['laravel-debugbar.css', 'laravel-icons.css'], basePath: __DIR__ . '/../resources');
+        $renderer->addAssets(cssFiles: ['laravel-fonts.css', 'laravel-debugbar.css', 'laravel-icons.css'], basePath: __DIR__ . '/../resources');
 
         if ($this->getStorage()) {
             $renderer->setOpenHandlerUrl(route('debugbar.openhandler'));
