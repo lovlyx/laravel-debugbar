@@ -1,0 +1,23 @@
+src/DataCollector/InertiaCollector.php
+  2064e48af1284e45 15-49
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "137453ed60154e4e1ac1f43700c59c14e7ae74b4",
+  "prompts": {
+    "2064e48af1284e45": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "efd7a224-1ba4-43d5-96e2-0f67fa0eef75",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Lovly",
+      "messages": [],
+      "total_additions": 35,
+      "total_deletions": 0,
+      "accepted_lines": 35,
+      "overriden_lines": 0
+    }
+  }
+}
