@@ -1,0 +1,31 @@
+resources/laravel-debugbar.css
+  2064e48af1284e45 1281-1392
+src/LaravelDebugbar.php
+  2064e48af1284e45 858-861
+resources/inertia/widget.js
+  2064e48af1284e45 1-78
+src/DataCollector/InertiaCollector.php
+  2064e48af1284e45 116-135
+config/debugbar.php
+  2064e48af1284e45 261-264
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.2.5",
+  "base_commit_sha": "171d59b70cc5b289b74de5318d8a6d1c77d31b9e",
+  "prompts": {
+    "2064e48af1284e45": {
+      "agent_id": {
+        "tool": "cursor",
+        "id": "efd7a224-1ba4-43d5-96e2-0f67fa0eef75",
+        "model": "claude-opus-4-6"
+      },
+      "human_author": "Lovly",
+      "messages": [],
+      "total_additions": 219,
+      "total_deletions": 4,
+      "accepted_lines": 218,
+      "overriden_lines": 0
+    }
+  }
+}
