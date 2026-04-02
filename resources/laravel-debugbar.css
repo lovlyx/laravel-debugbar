@@ -1278,3 +1278,115 @@ div.phpdebugbar-header-right select:hover {
     background: var(--debugbar-header-hover) !important;
     border-color: var(--debugbar-border-hover) !important;
 }
+
+
+/* ==========  24. Inertia Widget  ========== */
+
+div.phpdebugbar-widgets-inertia {
+    height: 100%;
+    overflow-y: auto;
+}
+
+div.phpdebugbar-widgets-inertia-empty {
+    padding: 24px 16px;
+    color: var(--debugbar-text-muted);
+    font-size: 13px;
+}
+
+div.phpdebugbar-widgets-inertia-page {
+    display: flex;
+    flex-direction: column;
+}
+
+div.phpdebugbar-widgets-inertia-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 16px;
+    background: var(--debugbar-background-alt);
+    border-bottom: 1px solid var(--debugbar-border);
+    font-family: var(--debugbar-font-mono);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--debugbar-text);
+    flex-shrink: 0;
+}
+
+span.phpdebugbar-widgets-inertia-component {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+span.phpdebugbar-widgets-inertia-type {
+    font-size: 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--debugbar-badge);
+    color: var(--debugbar-badge-text);
+    line-height: 1.4;
+}
+
+span.phpdebugbar-widgets-inertia-count {
+    margin-left: auto;
+    font-size: 11px;
+    color: var(--debugbar-text-muted);
+    font-weight: 400;
+}
+
+dl.phpdebugbar-widgets-inertia-props {
+    display: grid;
+    grid-template-columns: minmax(120px, max-content) 1fr;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+dl.phpdebugbar-widgets-inertia-props > dt,
+dl.phpdebugbar-widgets-inertia-props > dd {
+    margin: 0;
+    padding: 8px 16px;
+    border-bottom: 1px solid var(--debugbar-border);
+    min-height: 20px;
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+dl.phpdebugbar-widgets-inertia-props > dt {
+    font-family: var(--debugbar-font-mono);
+    font-weight: 500;
+    color: var(--debugbar-text-muted);
+    white-space: nowrap;
+    padding-right: 12px;
+    user-select: all;
+}
+
+dl.phpdebugbar-widgets-inertia-props > dd {
+    font-family: var(--debugbar-font-mono);
+    color: var(--debugbar-text);
+    min-width: 0;
+}
+
+dl.phpdebugbar-widgets-inertia-props > dt:nth-of-type(even),
+dl.phpdebugbar-widgets-inertia-props > dd:nth-of-type(even) {
+    background-color: var(--debugbar-background-alt);
+}
+
+dl.phpdebugbar-widgets-inertia-props > dt:hover,
+dl.phpdebugbar-widgets-inertia-props > dt:hover + dd {
+    background-color: var(--debugbar-hover-bg);
+}
+
+dl.phpdebugbar-widgets-inertia-props > dd:hover {
+    background-color: var(--debugbar-hover-bg);
+}
+
+dl.phpdebugbar-widgets-inertia-props > dd pre.sf-dump {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}

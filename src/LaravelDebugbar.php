@@ -855,6 +855,10 @@ class LaravelDebugbar extends DebugBar
 
             }
 
+            $maxAge = $config->get('debugbar.storage.auto_prune.max_age', 24);
+            $probability = $config->get('debugbar.storage.auto_prune.probability', 5);
+            $storage->setAutoPrune($maxAge === false ? false : (int) $maxAge, (int) $probability);
+
             $debugbar->setStorage($storage);
         }
     }

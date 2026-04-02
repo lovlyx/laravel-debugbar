@@ -113,8 +113,25 @@ class InertiaCollector extends TemplateCollector
 
     public function getWidgets(): array
     {
-        $widgets = parent::getWidgets();
-        $widgets[$this->getName()]['icon'] = 'brand-inertia';
-        return $widgets;
+        $name = $this->getName();
+        return [
+            $name => [
+                'icon' => 'brand-inertia',
+                'widget' => 'PhpDebugBar.Widgets.InertiaWidget',
+                'map' => $name,
+                'default' => '[]',
+            ],
+            "$name:badge" => [
+                'map' => $name . '.nb_templates',
+                'default' => 0,
+            ],
+        ];
+    }
+
+    public function getAssets(): array
+    {
+        return [
+            'js' => __DIR__ . '/../../resources/inertia/widget.js',
+        ];
     }
 }

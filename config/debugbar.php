@@ -258,6 +258,10 @@ return [
         'path'       => env('DEBUGBAR_STORAGE_PATH', storage_path('debugbar')), // For file driver
         'connection' => env('DEBUGBAR_STORAGE_CONNECTION'), // Leave null for default connection (Redis/PDO)
         'provider'   => env('DEBUGBAR_STORAGE_PROVIDER', ''), // Instance of StorageInterface for custom driver
+        'auto_prune' => [
+            'max_age' => (int) env('DEBUGBAR_STORAGE_AUTO_PRUNE_MAX_AGE', 24), // Hours to keep entries (false to disable)
+            'probability' => (int) env('DEBUGBAR_STORAGE_AUTO_PRUNE_PROBABILITY', 5), // Probability (1-100) of pruning on each request
+        ],
     ],
 
     /*
